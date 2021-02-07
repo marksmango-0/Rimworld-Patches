@@ -5,12 +5,14 @@
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>
-				Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]/stuffProps
+				Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]/stuffProps | 
+				Defs/ThingDef[defName = "BiomesNEO_ChunkHighland"]/stuffProps 
 				</xpath>
 			</li>
 			<li Class="PatchOperationRemove">
 				<xpath>
-				Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]/resourceReadoutPriority
+				Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]/resourceReadoutPriority |
+				Defs/ThingDef[defName = "BiomesNEO_ChunkHighland"]/resourceReadoutPriority 
 				</xpath>
 			</li>
 		</operations>
@@ -43,11 +45,37 @@
 					</stuffProps>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "BiomesNEO_ChunkHighland"]</xpath>
+				<value>
+					<stuffProps>
+						<categories>
+							<li>Chunky</li>
+						</categories>
+						<statOffsets>
+							<WorkToBuild>140</WorkToBuild>
+						</statOffsets>
+						<color>(210,210,210)</color>
+						<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+						<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+						<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+						<stuffAdjective>highland</stuffAdjective>
+						<statFactors>
+							<Beauty>1.35</Beauty>  
+							<MarketValue>0.8</MarketValue>
+							<MaxHitPoints>1.2</MaxHitPoints>
+							<WorkToBuild>5.5</WorkToBuild>
+							<WorkToMake>1.15</WorkToMake>
+						</statFactors>
+					</stuffProps>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 		<xpath>
-			Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]
+			Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"] |
+			Defs/ThingDef[defName = "BiomesNEO_ChunkHighland"]
 			</xpath>
 		<success>Always</success>
 		<value>
