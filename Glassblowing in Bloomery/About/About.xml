@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Glassblowing in Bloomery</name>
+	<author>marksmango</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>marksmango.glassblowinginbloomery</packageId>
+	<description>Adds basic glass production into the bloomery. Moves the fueled bench to a TBA research</description>
+	<modDependencies>
+        <li>
+            <packageId>NanoCE.GlassLights</packageId>
+            <displayName>Glass + Lights</displayName>
+            <downloadUrl>steam://url/CommunityFilePage/826153738</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=826153738</steamWorkshopUrl>
+        </li>
+		<li>
+            <packageId>Owlchemist.SimpleChains.Steel</packageId>
+            <displayName>Simple Chains : Steel</displayName>
+            <downloadUrl>steam://url/CommunityFilePage/1702668415</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1702668415</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+</ModMetaData>
