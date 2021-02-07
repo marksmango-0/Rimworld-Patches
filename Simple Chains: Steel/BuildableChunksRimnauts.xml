@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>
+				Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]/stuffProps
+				</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>
+				Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]/resourceReadoutPriority
+				</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]</xpath>
+				<value>
+					<stuffProps>
+						<categories>
+							<li>Chunky</li>
+						</categories>
+						<statOffsets>
+							<WorkToBuild>140</WorkToBuild>
+						</statOffsets>
+						<color>(74,67,59)</color>
+						<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+						<soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+						<soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+						<stuffAdjective>maria</stuffAdjective>
+						<statFactors>
+							<Beauty>1.4</Beauty>  
+							<MarketValue>0.8</MarketValue>
+							<MaxHitPoints>1.2</MaxHitPoints>
+							<WorkToBuild>5.7</WorkToBuild>
+							<WorkToMake>1.18</WorkToMake>
+						</statFactors>
+					</stuffProps>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[defName = "BiomesNEO_ChunkMaria"]
+			</xpath>
+		<success>Always</success>
+		<value>
+			<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		</value>
+	</Operation>
+</Patch>
