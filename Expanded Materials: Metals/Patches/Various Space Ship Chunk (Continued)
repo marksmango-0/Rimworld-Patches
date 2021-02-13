@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Materials - Metals</li>
+			<li>Various Space Ship Chunk (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_green"]/costList</xpath>
+					<value>
+						<VMEu_Copper>20</VMEu_Copper>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_green_small"]/costList</xpath>
+					<value>
+						<VMEu_Copper>10</VMEu_Copper>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_greenI"]/costList</xpath>
+					<value>
+						<VMEu_Copper>30</VMEu_Copper>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_greenI_small"]/costList</xpath>
+					<value>
+						<VMEu_Copper>15</VMEu_Copper>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_yellow"]/costList</xpath>
+					<value>
+						<VMEu_Germanium>12</VMEu_Germanium>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_yellow_small"]/costList</xpath>
+					<value>
+						<VMEu_Germanium>7</VMEu_Germanium>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_blue"]/costList</xpath>
+					<value>
+						<VMEu_Lead>22</VMEu_Lead>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_blue_small"]/costList</xpath>
+					<value>
+						<VMEu_Lead>11</VMEu_Lead>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_gray"]/costList</xpath>
+					<value>
+						<VMEu_Tungsten>20</VMEu_Tungsten>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_gray_small"]/costList</xpath>
+					<value>
+						<VMEu_Tungsten>10</VMEu_Tungsten>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_grayI"]/costList</xpath>
+					<value>
+						<VMEu_Tungsten>30</VMEu_Tungsten>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_grayI_small"]/costList</xpath>
+					<value>
+						<VMEu_Tungsten>15</VMEu_Tungsten>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_purple"]/costList</xpath>
+					<value>
+						<VMEu_Lithium>20</VMEu_Lithium>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_purple_small"]/costList</xpath>
+					<value>
+						<VMEu_Lithium>10</VMEu_Lithium>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_black"]/costList</xpath>
+					<value>
+						<VMEu_Titanium>20</VMEu_Titanium>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="ShipChunk_black_small"]/costList</xpath>
+					<value>
+						<VMEu_Titanium>10</VMEu_Titanium>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
